@@ -41,54 +41,54 @@ namespace LEARNING_CSHARP
 			// **********
 
 			// **********
-			System.Console.Write("How many numbers do you have: ");
+			//System.Console.Write("How many numbers do you have: ");
 
-			string strNumberCount =
-				System.Console.ReadLine();
+			//string strNumberCount =
+			//	System.Console.ReadLine();
 
-			int intNumberCount =
-				System.Convert.ToInt32(strNumberCount);
+			//int intNumberCount =
+			//	System.Convert.ToInt32(strNumberCount);
 
-			int[] intNumbers = new int[intNumberCount];
+			//int[] intNumbers = new int[intNumberCount];
 
-			int intIndex = 1;
+			//int intIndex = 1;
 
-			while (intIndex <= intNumberCount)
-			{
-				string strMessage =
-					string.Format("[{0}]: ", intIndex);
+			//while (intIndex <= intNumberCount)
+			//{
+			//	string strMessage =
+			//		string.Format("[{0}]: ", intIndex);
 
-				System.Console.Write(strMessage);
+			//	System.Console.Write(strMessage);
 
-				string strNumber =
-					System.Console.ReadLine();
+			//	string strNumber =
+			//		System.Console.ReadLine();
 
-				int intNumber =
-					System.Convert.ToInt32(strNumber);
+			//	int intNumber =
+			//		System.Convert.ToInt32(strNumber);
 
-				intNumbers[intIndex - 1] = intNumber;
+			//	intNumbers[intIndex - 1] = intNumber;
 
-				intIndex++;
-			}
+			//	intIndex++;
+			//}
 
-			int intSum = 0;
+			//int intSum = 0;
 
-			for (int intCurrentIndex = 0; intCurrentIndex <= intNumberCount - 1; intCurrentIndex++)
-			{
-				intSum +=
-					intNumbers[intCurrentIndex];
-			}
+			//for (int intCurrentIndex = 0; intCurrentIndex <= intNumberCount - 1; intCurrentIndex++)
+			//{
+			//	intSum +=
+			//		intNumbers[intCurrentIndex];
+			//}
 
-			string strResult =
-				string.Format("The sum of these numbers is: {0}", intSum);
+			//string strResult =
+			//	string.Format("The sum of these numbers is: {0}", intSum);
 
-			System.Console.WriteLine(strResult);
+			//System.Console.WriteLine(strResult);
 
 			//for (intIndex = 0; intIndex <= intNumbers.Length - 1; intIndex++)
 			//{
-			//	//System.Console.WriteLine("[" + (intIndex + 1) + "]: " + intNumbers[intIndex]);
+			//	System.Console.WriteLine("[" + (intIndex + 1) + "]: " + intNumbers[intIndex]);
 
-			//	System.Console.WriteLine("[{0}]: {1}", intIndex + 1, intNumbers[intIndex]);
+			//	//System.Console.WriteLine("[{0}]: {1}", intIndex + 1, intNumbers[intIndex]);
 			//}
 
 			//for (intIndex = intNumbers.Length - 1; intIndex >= 0; intIndex--)
@@ -105,6 +105,7 @@ namespace LEARNING_CSHARP
 
 			//foreach (int intCurrentNumber in intNumbers)
 			//{
+			//	// Note: intCurrentNumber is readonly!
 			//	//intCurrentNumber++;
 
 			//	System.Console.WriteLine(">" + intCurrentNumber);
@@ -113,17 +114,17 @@ namespace LEARNING_CSHARP
 
 			// **********
 			//int[,] X = new int[3, 50];
-			//int[, ,] X = new int[3, 50, 4];
+			//int[, ,] Y = new int[3, 50, 4];
 
-			// Jagged Array
-			//int[][] X = new int[3][];
-			//X[0] = new int[50];
-			//X[1] = new int[2];
-			//X[2] = new int[3];
+			//// Jagged Array
+			//int[][] Z = new int[3][];
+			//Z[0] = new int[50];
+			//Z[1] = new int[2];
+			//Z[2] = new int[3];
 			// **********
 
 			// **********
-			//System.Collections.ArrayList oList = new System.Collections.ArrayList();
+			System.Collections.ArrayList oList = new System.Collections.ArrayList();
 
 			//oList.Add(1);
 			//oList.Add(2);
@@ -140,6 +141,11 @@ namespace LEARNING_CSHARP
 
 			//oList.Add(0);
 			//oList.Insert(0, 0);
+
+			//for (int intIndex = 0; intIndex <= oList.Count - 1; intIndex++)
+			//{
+			//	System.Console.WriteLine("> " + oList[intIndex]);
+			//}
 
 			//foreach (int intCurrent in oList)
 			//{
@@ -198,6 +204,7 @@ namespace LEARNING_CSHARP
 			//	System.Console.WriteLine("> " + intCurrent);
 			//}
 
+			//int intIndex = oList.IndexOf(222);
 			//int intIndex = oList.IndexOf(500);
 
 			//System.Console.WriteLine("> " + intIndex);
